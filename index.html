@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Hole Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interesting Facts About Black Holes</h1>
+        <button id="factButton">Show a Random Fact</button>
+        <p id="factDisplay"></p>
+    </div>
+    <script>
+        const facts = [
+            "The boundary around a black hole beyond which no light or other radiation can escape is called the event horizon. It is often referred to as the 'point of no return.'",
+            "At the center of a black hole lies the singularity, a point where the laws of physics as we know them break down. It is where matter is thought to be infinitely dense.",
+            "Black holes can emit radiation, known as Hawking radiation, due to quantum effects near the event horizon. This radiation can eventually lead to the evaporation and disappearance of black holes over astronomical timescales.",
+            "Black holes are formed when massive stars collapse under their own gravity at the end of their life cycles, during a supernova explosion.",
+            "There are different types of black holes, including stellar black holes (formed from collapsing stars), supermassive black holes (found at the centers of most galaxies), and intermediate black holes (whose origins are still debated).",
+            "If you were to approach a black hole, the difference in gravitational pull between your head and your feet would stretch you out like spaghetti. This process is formally known as tidal force differentiation.",
+            "This theorem posits that black holes can be completely described by just three external observable properties: mass, electric charge, and angular momentum. This leads to the saying that 'black holes have no hair.'",
+            "According to Einstein's theory of relativity, time passes slower near a black hole compared to further away from it. At the event horizon, time theoretically stops.",
+            "Material that doesn't fall directly into a black hole orbits around it, forming an accretion disk. These disks can emit powerful X-rays and other radiation, making black holes detectable from Earth.",
+            "The collision and merger of black holes are among the few events powerful enough to produce detectable gravitational waves, which were predicted by Einstein and first observed directly in 2015 by LIGO (Laser Interferometer Gravitational-Wave Observatory)."
+        ];
+
+        document.getElementById('factButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('factDisplay').textContent = facts[randomIndex];
+        });
+    </script>
+</body>
+</html>
