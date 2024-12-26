@@ -15,4 +15,4 @@ If you want to run this project locally on your machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Govind0506/<repository-name>.git
+   git clone https://github.com/Govind0506/Black_Holes_Facts.git
